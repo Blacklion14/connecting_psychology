@@ -1,0 +1,50 @@
+
+.fixed{
+    position: fixed;
+    z-index: 9999;
+    background-color: white!important;
+}
+
+.shadow{
+    box-shadow: 0 50px 50px -50px #333;
+}
+
+.l{
+    text-align: left;
+}
+.r{
+    text-align: right;
+}
+.c{
+    text-align: center;
+}
+
+.nav-button{
+    background-color: black;
+}
+  
+
+/* .preloader{
+    background-size: center;
+    background-color: black;
+    text-align: center;
+}
+.loader {
+    background-image: url(../preloader/loader.gif);
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1{
+   padding:0px;
+   color:white;
+}
+  
+.img {
+    background-image: url(https://picsum.photos/200/300?grayscale);
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
