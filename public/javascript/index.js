@@ -5,15 +5,6 @@ const DownScroll = () => {
     var head = document.querySelector(".nav-header");
     var link = document.querySelectorAll(".navbar-light .navbar-nav .nav-link");
     var butt = document.querySelector(".navbar-light .navbar-toggler");
-    for (var i = 0; i < link.length; i++) {
-      link[i].classList.toggle("nav-change", window.scrollY > 0);
-      link[i].addEventListener("mouseover", () => {
-        mouse.classList.add("link-grow");
-      });
-      link[i].addEventListener("mouseleave", () => {
-        mouse.classList.remove("link-grow");
-      });
-    }
     butt.classList.toggle("nav-button", window.scrollY > 0);
     head.classList.toggle("nav-head", window.scrollY > 0);
     header.classList.toggle("shadow", window.scrollY > 0);

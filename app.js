@@ -21,10 +21,6 @@ app.get("/" , function(req , res){
     res.render("index");
 });
 
-app.get("/notes" , function(req , res){
-    console.log("notes");
-});
-
 app.get("/join" , function(req , res){
     console.log("join");
 });
@@ -33,20 +29,20 @@ app.get("/psychology" , function(req , res){
     res.render("psychology");
 });
 
-app.get("/men_health" , function(req , res){
-    console.log("mental health");
+app.get("/memory" , function(req , res){
+    res.render("memory");
 });
 
-app.get("/psy_ther" , function(req , res){
-    console.log("psychoTherapy");
+app.get("/therapy" , function(req , res){
+    res.render("therapy");
 });
 
-app.get("/PTK" , function(req , res){
-    res.write("Pta_Nhi_Kya");
+app.get("/stress" , function(req , res){
+    res.render("stress");
 });
 
 app.post("/counselling" ,function(req , res){
-    console.log("counselling");
+    res.redirect("/")
 });
 
 
