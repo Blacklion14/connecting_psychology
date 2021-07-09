@@ -1,234 +1,257 @@
 <%- include ('partials/header'); -%>
 
-    <!-- Header -->
-    <section id="my_header">
-        <div class="fluid-container">
+<!-- Header -->
+<section id="my_header">
+  <div class="fluid-container">
+    <div class="row">
+      <div class="col-lg-6 col-12 head_img">
+        <img class="header_img" src="Images/pta_nhi_kya2q.png" alt="logo">
+      </div>
+      <div class="col-lg-6 col-12 header_text">
+        <span class="head-text">Know Yourself Better By The Power Of Your Brain</span>
+      </div>
+    </div>
+</section>
+
+
+
+<!-- Content -->
+<section id="content">
+  <div class="row">
+    <div id="docs" class="col-lg-6 col-12 content_row">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-slide" data-ride="carousel"
+        data-interval="4000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" style="position: relative; margin-top: 50px">
+          <span style="position: absolute; left: 50%; transform: translate(-50%,0%); font-size: 30px;">Notes</span>
+          <div class="carousel-item active">
             <div class="row">
-              <div class="col-lg-6 col-12 head_img">
-                <img class="header_img" src="Images/pta_nhi_kya2q.png" alt="logo">
+              <div class="col-6">
+                <img class="slider_image" src="Images/psychology.png" alt="Logo">
               </div>
-              <div class="col-lg-6 col-12 header_text">
-                <span class="head-text">Know Yourself Better By The Power Of Your Brain</span>
-              </div>
-            </div>
-    </section>
-
-
-
-    <!-- Content -->
-    <section id="content">
-        <div class="row">
-            <div id="docs" class="col-lg-6 col-12 content_row">
-              <div id="carouselExampleIndicators" class="carousel slide carousel-slide" data-ride="carousel" data-interval="4000">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-6">
-                        <img class="slider_image" src="Images/psychology.png" alt="Logo">
-                      </div>
-                      <div class="col-6">
-                        <h3 class="slider_heading">Psychology</h3>
-                        <p class="slider_text" >Psychology is the science and art of understanding behaviour.</p>
-                        <a class="slider-link" href="/psychology" target="_blank">Know More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-6">
-                        <img class="slider_image" src="Images/men_hel.png" alt="Logo">
-                      </div>
-                      <div class="col-6">
-                        <h3 class="slider_heading">Memory</h3>
-                        <p class="slider_text">It is a fundamental component of daily life</p>
-                        <a class="slider-link" href="/memory">Know More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-6">
-                        <img class="slider_image" src="Images/psy_ther.png" alt="Logo">
-                      </div>
-                      <div class="col-6">
-                        <h3 class="slider_heading">PhyschoTherapy</h3>
-                        <p class="slider_text">Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,</p>
-                        <a class="slider-link" href="/therapy">Know More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-6">
-                        <img class="slider_image" src="Images/stress.jpg" alt="Logo">
-                      </div>
-                      <div class="col-6">
-                        <h3 class="slider_heading">Stress And Health</h3>
-                        <p class="slider_text">Stress has powerful effects on mental functioning, mental and physical performance.</p>
-                        <a class="slider-link" href="/stress">Know More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-6">
+                <h3 class="slider_heading">Psychology</h3>
+                <p class="slider_text">Psychology is the science and art of understanding behaviour.</p>
+                <a class="slider-link" href="/psychology" target="_blank">Know More</a>
               </div>
             </div>
-            <div id="counseling" class="col-lg-6 col-12 content_row">
-                <div class="form-container">
-                    <h2>Want Counseling? Just Fill The Form.</h2>
-                    <form action="/counselling" method="post" autocomplete="off">
-                      <div class="input-name">
-                        <input type="text" placeholder="First Name" class="form-name-l" name="firstname" minlength="3"
-                          style="text-transform: capitalize;" required />
-                        <span class="last">
-                          <input type="text" placeholder="Last Name" class="form-name-l" name="lastname" minlength="3"
-                            style="text-transform: capitalize;" required />
-                        </span>
-                      </div>
-                      
-        
-                      <div class="input-name">
-                        <input type="text" name="mobileno" placeholder="Mobile Number" class="form-name" maxlength="10"
-                          minlength="10" required />
-                      </div>
-        
-                      <div class="input-name ">
-        
-                        <input type="email" class="form-name" id="email"
-                            name="email" placeholder="Email Address (optional)" onkeyup="checkemail()"/>
-        
-                      </div>
-                      
-                      <div class="input-name">
-                        <select class="form-name" name="Counsling" id="Counsling" placeholder="Which Counsling?">
-                          <option value="none">none</option>
-                          <option value="volvo">Educational</option>
-                          <option value="saab">Vocational</option>
-                          <option value="opel">Marital</option>
-                          <option value="audi">Guidance and counseling</option>
-                        </select>
-    
-                      </div>
-                      
-                      <div class="input-name">
-                        
-                        <input type="text" placeholder="Age" class="form-name-l" name="age"
-                          style="text-transform: capitalize;" required />
-                        
-                          
-                        <input type="text" placeholder="Gender" class="form-name-l" name="lastname" 
-                            style="text-transform: capitalize;" required />
-                        
-                      </div>
-
-                      <div class="input-name ">
-        
-                        <!-- <input type="text" class="form-name" id="text"
-                            name="text" placeholder="Tell Us Something About Your Problem!!" /> -->
-                        
-                         <!-- <span>
-                            <textarea id="text" class="textarea form-name" cols="" rows="1" placeholder="Tell Us Something About Your Problem!!"></textarea>
-                        </span>      -->
-                         
-                        <span class="textarea form-name" role="textbox" contenteditable></span>
-
-                      </div>
-                    
-                      <div class="input-name-l">
-                        <button class="button" type="submit"> Request Counseling </button>
-                      </div>
-                    </form>
-                  </div>
-            </div>   
-    </section>
-
-<!-- <div class="divider"></div> -->
-
-    <!-- Motivation -->
-    <section id="motivation">
-        <div class="container">
-          <div class="row motive">
-            <div class="col-12">
-              <h1>Our Motivation</h1>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6">
+                <img class="slider_image" src="Images/men_hel.png" alt="Logo">
+              </div>
+              <div class="col-6">
+                <h3 class="slider_heading">Memory</h3>
+                <p class="slider_text">It is a fundamental component of daily life</p>
+                <a class="slider-link" href="/memory">Know More</a>
+              </div>
             </div>
           </div>
-          <div class="row motive l">
-            <div class="col-lg-6 col-12">
-              <h3>Unavailability Of Resources</h3>
-              <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-            </div>
-            <div class="col-lg-6 col-12">
-              <img class="motive_img" src="images/unavail1.png" alt="unavl">
-            </div>
-          </div>
-          <div class="row motive r custom">
-            <div class="col-lg-6 col-12">
-              <img class="motive_img" src="images/lack.png" alt="lack">
-            </div>
-            <div class="col-lg-6 col-12">
-              <h3>Lack Of Awareness</h3>
-              <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6">
+                <img class="slider_image" src="Images/psy_ther.png" alt="Logo">
+              </div>
+              <div class="col-6">
+                <h3 class="slider_heading">PhyschoTherapy</h3>
+                <p class="slider_text">Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,</p>
+                <a class="slider-link" href="/therapy">Know More</a>
+              </div>
             </div>
           </div>
-          <div class="row motive l">
-            <div class="col-lg-6 col-12">
-              <h3>Prevalent Stigma</h3>
-              <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-            </div>
-            <div class="col-lg-6 col-12">
-              <img class="motive_img" src="images/discrimination-blog.png" alt="Stigma">
-            </div>
-          </div>
-        </div>
-    </section>
-
-
-
-    <!-- Info -->
-    <section id="Info" >
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-12 col-12 l col-info">
-          <div class="card" style="width: 18rem;">
-            <img class="info-img" src="Images/men_hel.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 col-12 l col-info">
-          <div class="card" style="width: 18rem;">
-            <img class="info-img" src="Images/men_hel.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 col-12 l col-info">
-          <div class="card" style="width: 18rem;">
-            <img class="info-img" src="Images/men_hel.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 col-12 l col-info">
-          <div class="card" style="width: 18rem;">
-            <img class="info-img" src="Images/men_hel.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6">
+                <img class="slider_image" src="Images/stress.jpg" alt="Logo">
+              </div>
+              <div class="col-6">
+                <h3 class="slider_heading">Stress And Health</h3>
+                <p class="slider_text">Stress has powerful effects on mental functioning, mental and physical
+                  performance.</p>
+                <a class="slider-link" href="/stress">Know More</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div id="counseling" class="col-lg-6 col-12 content_row">
+      <div class="form-container">
+        <h2>Want Counseling? Just Fill The Form.</h2>
+        <form action="/counselling" method="post" autocomplete="off">
+          <div class="input-name">
+            <input type="text" placeholder="First Name" class="form-name-l" name="firstname" minlength="3"
+              style="text-transform: capitalize;" required />
+            <span class="last">
+              <input type="text" placeholder="Last Name" class="form-name-l" name="lastname" minlength="3"
+                style="text-transform: capitalize;" required />
+            </span>
+          </div>
+
+
+          <div class="input-name">
+            <input type="text" name="mobileno" placeholder="Mobile Number" class="form-name" maxlength="10"
+              minlength="10" required />
+          </div>
+
+          <div class="input-name ">
+
+            <input type="email" class="form-name" id="email" name="email" placeholder="Email Address (optional)"
+              onkeyup="checkemail()" />
+
+          </div>
+
+          <div class="input-name">
+            <select class="form-name" name="Counsling" id="Counsling" placeholder="Which Counsling?">
+              <option value="none">none</option>
+              <option value="volvo">Educational</option>
+              <option value="saab">Vocational</option>
+              <option value="opel">Marital</option>
+              <option value="audi">Guidance and counseling</option>
+            </select>
+
+          </div>
+
+          <div class="input-name">
+
+            <input type="text" placeholder="Age" class="form-name-l" name="age" style="text-transform: capitalize;"
+              required />
+
+
+            <input type="text" placeholder="Gender" class="form-name-l" name="lastname"
+              style="text-transform: capitalize;" required />
+
+          </div>
+
+          <div class="input-name ">
+
+            <!-- <input type="text" class="form-name" id="text"
+                            name="text" placeholder="Tell Us Something About Your Problem!!" /> -->
+
+            <!-- <span>
+                            <textarea id="text" class="textarea form-name" cols="" rows="1" placeholder="Tell Us Something About Your Problem!!"></textarea>
+                        </span>      -->
+
+            <span class="textarea form-name" role="textbox" contenteditable></span>
+
+          </div>
+
+          <div class="input-name-l">
+            <button class="button" type="submit"> Request Counseling </button>
+          </div>
+        </form>
+      </div>
+    </div>
+</section>
+
+<!-- <div class="divider"></div> -->
+
+<!-- Motivation -->
+<section id="motivation">
+  <div class="container">
+    <div class="row motive">
+      <div class="col-12">
+        <h1>Our Motivation</h1>
+      </div>
+    </div>
+    <div class="row motive l">
+      <div class="col-lg-6 col-12">
+        <h3>Unavailability Of Resources</h3>
+        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris.
+          Curabitur wisi, quisque vel eu, rutrum nam.</p>
+      </div>
+      <div class="col-lg-6 col-12">
+        <img class="motive_img" src="images/unavail1.png" alt="unavl">
+      </div>
+    </div>
+    <div class="row motive r custom">
+      <div class="col-lg-6 col-12">
+        <img class="motive_img" src="images/lack.png" alt="lack">
+      </div>
+      <div class="col-lg-6 col-12">
+        <h3>Lack Of Awareness</h3>
+        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris.
+          Curabitur wisi, quisque vel eu, rutrum nam.</p>
+      </div>
+    </div>
+    <div class="row motive l">
+      <div class="col-lg-6 col-12">
+        <h3>Prevalent Stigma</h3>
+        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris.
+          Curabitur wisi, quisque vel eu, rutrum nam.</p>
+      </div>
+      <div class="col-lg-6 col-12">
+        <img class="motive_img" src="images/discrimination-blog.png" alt="Stigma">
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
-   
-    <%- include ('partials/footer'); -%>
+<!-- Info -->
+<section id="Info">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12 l col-info">
+      <div class="card" style="width: 18rem;">
+        <img class="info-img" src="Images/shriya.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Shriya Rai <br> Masters is Psychology, P.G. Diploma in counseling and Psychotherapy 
+            <br>  
+            Works as Counselor and technical expert</p>
+            <a href="#" class="btn btn-primary" style="margin: 0% 6%;">Know more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12 l col-info">
+      <div class="card" style="width: 18rem;">
+        <img class="info-img" src="Images/tanvi.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Tanvi Jain <br>
 
+            M.phil in Clinical Psychology <br>
+            
+            Works as Clinical Psychologist</p>
+            <a href="#" class="btn btn-primary" style="margin: 0% 6%;">Know more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12 l col-info">
+      <div class="card" style="width: 18rem;">
+        <img class="info-img" src="Images/ankur.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Ankur Yadav <br>
+
+            Masters in Psychology, P.G. Diploma in counseling and Psychotherapy 
+            
+            Counselor</p>  
+            <a href="#" class="btn btn-primary" style="margin: 0% 6%;">Know more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12 l col-info">
+      <div class="card" style="width: 18rem;">
+        <img class="info-img" src="Images/rosy.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Rosy Sandilya <br>
+
+            Pursuing PhD from Banaras Hindu University <br>
+            
+            Works with Social media management</p>
+            <a href="#" class="btn btn-primary" style="margin: 0% 6%;">Know more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<%- include ('partials/footer'); -%>

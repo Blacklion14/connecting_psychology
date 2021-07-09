@@ -297,11 +297,21 @@ p {
     margin: auto;
 }
 
+.card-body{
+    height: 300px;
+    position: relative;
+}
+.card-body a{
+    position: absolute;
+    bottom: 40px;
+}
+
 .col-info {
     margin: 2% 0%;
 }
 
 .info-img {
+    object-fit:cover;
     height: 40vh;
 }
 
