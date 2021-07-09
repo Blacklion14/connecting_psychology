@@ -3,7 +3,18 @@
     padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
+body {
+    overflow-x: hidden;
+    position: relative;
+    margin: auto;
+    min-width: 454px;
+    max-width: 1500px;
+    /* cursor: none; */
+}
 hr {
     border: 0px rgb(109, 176, 214);
     height: 1px;
@@ -214,5 +225,11 @@ p{
     100%
     {
         opacity: 1;
+    }
+}
+
+@media(max-width: 454px){
+    body{
+        overflow-x: none ;
     }
 }
