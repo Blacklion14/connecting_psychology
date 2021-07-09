@@ -42,7 +42,7 @@ app.get("/stress" , function(req , res){
 });
 
 app.post("/counselling" ,function(req , res){
-    res.redirect("/")
+    res.redirect("/");
 });
 
 const Port = process.env.PORT || 3000;
