@@ -45,7 +45,8 @@ app.post("/counselling" ,function(req , res){
     res.redirect("/")
 });
 
+const Port = process.env.PORT || 3000;
 
-app.listen(3000, function () {
-    console.log("server running at 3000");
+app.listen(Port, function () {
+    console.log("server running");
 });
