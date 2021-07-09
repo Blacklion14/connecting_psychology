@@ -80,7 +80,6 @@ const slider = () => {
 
 
 
-gsap();
 
 // .fromTo(logo, 0.5, {
 //   opacity: 0,
