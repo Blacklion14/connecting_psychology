@@ -48,5 +48,5 @@ app.post("/counselling" ,function(req , res){
 const Port = process.env.PORT || 3000;
 
 app.listen(Port, function () {
-    console.log("server running");
+    console.log(`server running at ${Port}`);
 });
